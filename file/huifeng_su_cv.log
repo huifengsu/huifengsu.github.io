@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  11 FEB 2026 03:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  11 FEB 2026 03:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -849,18 +849,12 @@ Things are pretty mixed up, but I think the worst is over.
 
 
 
+[1
 
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/l
-ocal/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}
-
-{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc}{/usr/local/
-texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc}{/usr/local/texlive/2
+025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2025/texmf-dist
+/fonts/enc/dvips/lm/lm-ts1.enc}]
 
 [2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
@@ -876,24 +870,17 @@ File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-Package rerunfilecheck Warning: File `huifeng_su_cv.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `huifeng_su_cv.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  85DD5FC3DA43BBAD885BE3F906576BCF;1501.
+Package rerunfilecheck Info: File `huifeng_su_cv.out' has not changed.
+(rerunfilecheck)             Checksum: 85DD5FC3DA43BBAD885BE3F906576BCF;1501.
  ) 
 Here is how much of TeX's memory you used:
- 16832 strings out of 473190
- 285673 string characters out of 5715801
- 723443 words of memory out of 5000000
- 39816 multiletter control sequences out of 15000+600000
+ 16842 strings out of 473190
+ 285758 string characters out of 5715801
+ 723195 words of memory out of 5000000
+ 39826 multiletter control sequences out of 15000+600000
  620366 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,995b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,995b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/lo
 cal/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texliv
 e/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/te
@@ -906,10 +893,10 @@ live/2025/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2025/t
 exmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/
 fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1
 /public/lm/lmtt10.pfb>
-Output written on huifeng_su_cv.pdf (3 pages, 256391 bytes).
+Output written on huifeng_su_cv.pdf (3 pages, 256910 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
+ 166 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
  23 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
