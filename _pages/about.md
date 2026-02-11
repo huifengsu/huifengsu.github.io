@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: "[hway-fong soo][苏汇丰]<br>PhD Candidate in Operations | <a href='https://som.yale.edu/'>Yale School of Management</a>"
+subtitle: ""
 
 profile:
   align: right
@@ -33,4 +33,4 @@ His research leverages both structured and unstructured data to enhance efficien
 
 Before doctoral studies, Su completed degrees in Industrial & Systems Engineering and Computer Sciences at the University of Wisconsin–Madison, collaborating with the [Quality & Safety Improvement Lab](https://quality-safety-innovation.wisc.edu/) and the [Analytics for Human Development Lab](https://a4hd.github.io/).
 
-He will join [Minnesota Carlson](https://carlsonschool.umn.edu/) as a tenure-track Assistant Professor in Supply Chain & Operations in Fall 2026.
+He will join Minnesota Carlson as a tenure-track Assistant Professor in Supply Chain & Operations in Fall 2026.
