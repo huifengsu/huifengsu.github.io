@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Candidate in Operations | <a href='https://som.yale.edu/'>Yale School of Management</a>
+subtitle: "[hway-fong soo][苏汇丰]<br>PhD Candidate in Operations | <a href='https://som.yale.edu/'>Yale School of Management</a>"
 
 profile:
   align: right
@@ -27,9 +27,9 @@ latest_posts:
   limit: 3
 ---
 
-Huifeng Su [hway-fong soo][苏汇丰] is a Ph.D. candidate in Operations at Yale School of Management, co-advised by Prof. Lesley Meng and Prof. Edieal J. Pinker.
+Huifeng Su is a Ph.D. candidate in Operations at Yale School of Management, co-advised by Prof. Lesley Meng and Prof. Edieal J. Pinker.
 
-Her research leverages both structured and unstructured data to enhance efficiency, quality, and equity in essential health and human services. She applies causal inference and machine learning techniques to operational challenges for practical insights.
+His research leverages both structured and unstructured data to enhance efficiency, quality, and equity in essential health and human services. He applies causal inference and machine learning techniques to operational challenges for practical insights.
 
 Before doctoral studies, Su completed degrees in Industrial & Systems Engineering and Computer Sciences at the University of Wisconsin–Madison, collaborating with the Quality & Safety Improvement Lab and the Analytics for Human Development Lab.
 
