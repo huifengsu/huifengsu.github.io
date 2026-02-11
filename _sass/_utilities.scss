@@ -58,6 +58,7 @@ code {
 // Progress bars
 
 progress {
+  display: none !important; /* Hide progress bar */
   /* Positioning */
   position: fixed;
   left: 0;
@@ -96,13 +97,13 @@ progress::-moz-progress-bar {
 }
 
 .progress-container {
+  display: none !important; /* Hide progress bar */
   width: 100%;
   background-color: transparent;
   position: fixed;
   top: 56px;
   left: 0;
   height: 5px;
-  display: block;
 }
 
 .progress-bar {
