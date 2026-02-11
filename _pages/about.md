@@ -27,10 +27,10 @@ latest_posts:
   limit: 3
 ---
 
-Huifeng Su is a Ph.D. candidate in Operations at Yale School of Management, co-advised by [Prof. Lesley Meng](https://som.yale.edu/faculty-research/faculty-directory/lesley-meng) and [Prof. Edieal J. Pinker](https://som.yale.edu/faculty-research/faculty-directory/edieal-j-pinker).
+I am a Ph.D. candidate in Operations at Yale School of Management, where I am fortunate to be co-advised by [Prof. Lesley Meng](https://som.yale.edu/faculty-research/faculty-directory/lesley-meng) and [Prof. Edieal J. Pinker](https://som.yale.edu/faculty-research/faculty-directory/edieal-j-pinker).
 
-His research leverages both structured and unstructured data to enhance efficiency, quality, and equity in essential health and human services. He applies causal inference and machine learning techniques to operational challenges for practical insights.
+Leveraging structured and unstructured data, my research focuses on improving and evaluating the efficiency, quality, and equity of essential health and human services (HHS). I adapt causal inference and machine learning methods to specific operational contexts to generate actionable insights.
 
-Before doctoral studies, Su completed degrees in Industrial & Systems Engineering and Computer Sciences at the University of Wisconsin–Madison, collaborating with the [Quality & Safety Improvement Lab](https://quality-safety-innovation.wisc.edu/) and the [Analytics for Human Development Lab](https://a4hd.github.io/).
+Prior to my doctoral studies, I studied Industrial & Systems Engineering and Computer Sciences at the University of Wisconsin–Madison, where my work with the [Quality & Safety Improvement Lab](https://quality-safety-innovation.wisc.edu/) and the [Analytics for Human Development Lab](https://a4hd.github.io/) sparked my research interests.
 
-He will join Minnesota Carlson as a tenure-track Assistant Professor in Supply Chain & Operations in Fall 2026.
+I'm joining [Minnesota Carlson](https://carlsonschool.umn.edu/) as a tenure-track Assistant Professor in Supply Chain & Operations in Fall 2026 :)
