@@ -21,7 +21,7 @@ layout: default
           %}
         {% endif %}
         {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+          <div class="more-info" style="text-align: center;">{{ page.profile.more_info }}</div>
         {% endif %}
       </div>
     {% endif %}
@@ -30,12 +30,12 @@ layout: default
       <h1 class="post-title">
         {% if site.title == 'blank' %}
           {{ site.first_name }} {{ site.middle_name }}
-          {{ site.last_name }} <span style="font-weight: normal; font-size: 0.5em; color: #888;">[hway-fong soo][苏汇丰]</span>
+          {{ site.last_name }}<br><span style="font-weight: normal; font-size: 0.4em; color: #888;">[hway-fong soo][苏汇丰]</span>
         {% else %}
           {{ site.title }}
         {% endif %}
       </h1>
-      <p class="desc">PhD Candidate in Operations | <a href='https://som.yale.edu/'>Yale School of Management</a></p>
+      <p class="desc">PhD Candidate in Operations | Yale School of Management</p>
     </header>
 
     <div class="clearfix">{{ content }}</div>
