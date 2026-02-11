@@ -27,10 +27,10 @@ latest_posts:
   limit: 3
 ---
 
-Huifeng Su is a Ph.D. candidate in Operations at Yale School of Management, co-advised by Prof. Lesley Meng and Prof. Edieal J. Pinker.
+Huifeng Su is a Ph.D. candidate in Operations at Yale School of Management, co-advised by [Prof. Lesley Meng](https://som.yale.edu/faculty-research/faculty-directory/lesley-meng) and [Prof. Edieal J. Pinker](https://som.yale.edu/faculty-research/faculty-directory/edieal-j-pinker).
 
 His research leverages both structured and unstructured data to enhance efficiency, quality, and equity in essential health and human services. He applies causal inference and machine learning techniques to operational challenges for practical insights.
 
-Before doctoral studies, Su completed degrees in Industrial & Systems Engineering and Computer Sciences at the University of Wisconsin–Madison, collaborating with the Quality & Safety Improvement Lab and the Analytics for Human Development Lab.
+Before doctoral studies, Su completed degrees in Industrial & Systems Engineering and Computer Sciences at the [University of Wisconsin–Madison](https://www.wisc.edu/), collaborating with the Quality & Safety Improvement Lab and the Analytics for Human Development Lab.
 
-She will join Minnesota Carlson as a tenure-track Assistant Professor in Supply Chain & Operations in Fall 2026.
+He will join [Minnesota Carlson](https://carlsonschool.umn.edu/) as a tenure-track Assistant Professor in Supply Chain & Operations in Fall 2026.
