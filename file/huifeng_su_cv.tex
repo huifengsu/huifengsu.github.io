@@ -1,0 +1,479 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+
+
+
+\documentclass[letterpaper,11pt]{article}
+\makeatletter
+\def\@secpenalty{0} % default is 10000 (forbid break); 0 allows it
+\makeatother
+\usepackage{amsmath} 
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{afterpage}
+\usepackage{lmodern}
+\input{glyphtounicode}
+\usepackage{datetime}
+
+%%%%%%%%%%%%%%%%%%%%%%%% Paper Status %%%%%%%%%%%%%%%%%%%%%%%%
+% Add this near the top with your other command definitions
+\newif\ifpublic
+\publictrue  % Set to \publicfalse for private version
+
+
+\newcommand{\PrivatePaperStatusCi}{Resubmitted to \textit{Manufacturing \& Service Operations Management}}
+\newcommand{\PrivatePaperStatusBoarding}{Reject \& Resubmit at \textit{Operations Research}}
+\newcommand{\PrivatePaperStatusFamilyReunion}{Preparing for Submission to \textit{Management Science}}
+
+\newcommand{\PublicPaperStatusCi}{Major Revision at \textit{Manufacturing \& Service Operations Management}}
+\newcommand{\PublicPaperStatusBoarding}{Reject \& Resubmit at \textit{Operations Research}}
+\newcommand{\PublicPaperStatusFamilyReunion}{Preparing for Submission to \textit{Management Science}}
+
+
+% Then define conditional commands
+\newcommand{\PaperStatusCi}{\ifpublic\PublicPaperStatusCi\else\PrivatePaperStatusCi\fi}
+\newcommand{\PaperStatusBoarding}{\ifpublic\PublicPaperStatusBoarding\else\PrivatePaperStatusBoarding\fi}
+\newcommand{\PaperStatusFamilyReunion}{\ifpublic\PublicPaperStatusFamilyReunion\else\PrivatePaperStatusFamilyReunion\fi}
+
+
+
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+\usepackage[letterpaper,top=1.5cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{} % Clear existing headers/footers
+\fancyfoot[C]{\thepage} % Centered page number for all pages
+\renewcommand{\headrulewidth}{0pt} % Optional: Remove header line
+\renewcommand{\footrulewidth}{0pt} % Optional: Remove footer line
+
+
+\urlstyle{same}
+
+% Define the custom color
+\definecolor{linkblue}{HTML}{286dc0}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting - Made larger and bolder
+\titleformat{\section}{
+  \vspace{1pt}\raggedright\large\bfseries\uppercase
+}{}{0em}{}[\titlerule \vspace{1pt}]
+% Subsection formatting
+\titleformat{\subsection}{
+\vspace{-4pt}\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingYale}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingWisc}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \ifx&#2&\else#2\fi \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\fancypagestyle{plain}{
+    \fancyhf{} % Clear all header/footer
+    \renewcommand{\headrulewidth}{0pt} % Remove header line
+    \fancyhead[R]{\vspace{0pt}\small \textcolor{gray}{\textit{Updated \monthname[\the\month]\space\the\year}%
+        \ifpublic
+            % do nothing when publictrue
+        \else
+            \\ \vspace{2pt} \href{https://drive.google.com/file/d/1TDIk_o1wXP7mFVLKPo9SOypmX2ljGshp/view?usp=sharing}{Click here for the latest version}%
+        \fi
+    }}
+    \fancyfoot[C]{\thepage} % Add centered page number
+}
+    
+
+
+\setlength{\footskip}{30pt}
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING --------------------
+
+% -------------------- HEADING --------------------
+% -------------------- HEADING --------------------
+\thispagestyle{plain}
+
+% Centered name
+\begin{center}
+  \vspace{-10pt} % tighten space to the top; tweak as needed
+  {\Huge \scshape Huifeng Su\par}
+  \vspace{2pt}
+\end{center}
+\vspace{-6pt}
+
+% Two-column contact row with aligned tops (address left, contact right)
+\noindent
+\begin{minipage}[t]{0.56\textwidth}
+  \flushleft\small
+  \begin{tabular}{@{}l@{}}
+    Evans Hall\\
+    
+    165 Whitney Avenue\\
+    New Haven, CT 06511
+  \end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.40\textwidth}
+  \flushright\small
+  \begin{tabular}{@{}r@{}}
+    (203) 535\textendash8177\\
+    \href{mailto:huifeng.su@yale.edu}{huifeng.su@yale.edu}\\
+    \href{https://www.huifeng-su.com}{www.huifeng-su.com}
+  \end{tabular}
+\end{minipage}
+\vspace{6pt}
+
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingYale
+      {Yale University}{2020 - 2026}
+      {Ph.D. in Operations Management}{2026 (Expected)}
+      {M.Phil \& M.A.  in Operations Management}{2023}
+    \resumeSubheadingWisc
+      {University of Wisconsin – 
+ Madison}{2016 - 2020}
+      {B.Eng. with majors in Industrial \& Systems Engineering and Computer Sciences}{}
+      
+\resumeSubHeadingListEnd
+
+\section{Research Interests}
+\begin{itemize}[leftmargin=*, topsep=0pt plus 1pt]
+    \item Empirical Operations, Healthcare Operations, Humanitarian Operations, AI for Social Good
+    \vspace{-8pt}
+    \item Causal Inference, Machine Learning, Unstructured Data
+\end{itemize}
+
+% -------------------- Papers --------------------
+\section{Selected Papers}
+\begin{flushleft}
+\vspace{-5pt}
+\textit{\textsuperscript{†} indicates medical collaborator}
+\end{flushleft}
+\vspace{-20pt}
+
+\begin{enumerate}
+    
+    \item Crisis at the Core: Examining the Ripple Effects of Critical Incidents on Emergency Department Physician Productivity and Work Style. \\\textbf{Su H}, Meng L, Sangal RB\textsuperscript{†}, and Pinker EJ. \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5113467}{\textcolor{linkblue}{[Link]}}
+    \vspace{-8pt}
+    \begin{itemize}
+        \item \PaperStatusCi
+        \vspace{-4pt}
+        \item Selected for Wharton Empirical Workshop 2025
+    \end{itemize}
+
+    \vspace{-8pt}
+    \item Emergency Department Boarding: Quantifying the Impact of ED Boarding on Patient Outcomes and Downstream Hospital Operations.\\\textbf{Su H}, Meng L, Sangal RB\textsuperscript{†}, and Pinker EJ. \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4693153}{\textcolor{linkblue}{[Link]}}
+    \vspace{-8pt}
+    \begin{itemize}
+        \item \PaperStatusBoarding
+    \end{itemize}
+    
+    \vspace{-8pt}
+    \item Sociodemographic Disparities in Queue Jumping for Emergency Department Care. \\Sangal RB\textsuperscript{†}, \textbf{Su H}, Khidir H\textsuperscript{†}, Parwani V\textsuperscript{†}, Liebhardt B\textsuperscript{†}, Pinker EJ, Meng L, Venkatesh AK\textsuperscript{†}, Ulrich A\textsuperscript{†}. (2023). \textit{JAMA Network Open.} \href{https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2807707}{\textcolor{linkblue}{[Link]}}
+    \vspace{-8pt}
+    \begin{itemize}
+        \item Media mention: New York Times, Becker's Hospital Review, Yale Insights
+    \end{itemize}
+    \vspace{-8pt}
+    
+    \item Reuniting Forcibly Separated Families Through Shared Memories with Machine Learning.\\ \textbf{Su H}, Meng L and Pinker EJ.\href{https://drive.google.com/file/d/1gnc4BEnxOJDHMa8qjcIGCTcUtESp9k-t/view?usp=sharing}{\textcolor{linkblue}{[Link]}}
+    \vspace{-8pt}
+    \begin{itemize}
+        \item \PaperStatusFamilyReunion
+        \vspace{-4pt}
+        \item Winner, INFORMS Data Mining Best Applied Paper Award, 2025.
+        \vspace{-4pt}
+        \item Winner, INFORMS Social Media Analytics Best Student Paper Award, 2025.
+        \vspace{-4pt}
+        \item Funding awarded by Tsai Center for Innovative Thinking at Yale, 2025.
+        \vspace{-4pt}
+        \item Media mention: Yale Insights, Phys.org
+    \end{itemize}
+
+\end{enumerate}
+
+% \section{Early-Stage Project}
+% \begin{flushleft}
+% \vspace{-5pt}
+% \end{flushleft}
+% \vspace{-20pt}
+
+% \begin{enumerate}
+%     \item Hierarchical Collaboration in Demanding Work Environments
+%     \vspace{-4pt}
+%     \item Leading and Following in Humanitarian Service: The Interplay of Non-Profit Innovation and Government Scale
+%     \vspace{-4pt}
+%     \item Empathetic Engagement in Online Forums: Aligning Platform Goals with Community Wellbeing
+
+
+    
+
+
+\end{enumerate}
+% -------------------- Other Papers --------------------
+\section{Other Papers}
+\begin{flushleft}
+\vspace{-5pt}
+\textit{\textsuperscript{†} indicates medical collaborator.}
+\end{flushleft}
+\vspace{-20pt}
+
+\begin{enumerate}
+\item Load Balancing Patient Flow to Improve ED Congestion. \\Dilip M\textsuperscript{†}, \textbf{Su H}, Zhang W, Meng L, Tuffuor K\textsuperscript{†}, Pham L\textsuperscript{†}, Fogerty R\textsuperscript{†}, Venkatesh AK\textsuperscript{†}, Pinker EJ, Sangal RB\textsuperscript{†}. (2025). \textit{The American Journal of Emergency Medicine.} \href{https://doi.org/10.1016/j.ajem.2025.08.060}{\textcolor{linkblue}{[Link]}}
+    \vspace{-4pt}
+   \item Inequities Among Patient Placement in Emergency Department Hallway Treatment Spaces. \\Tuffuor K\textsuperscript{†}, \textbf{Su H}, Meng L, Pinker EJ, Tarabar A\textsuperscript{†}, Van Tonder R\textsuperscript{†}, Chmura C\textsuperscript{†}, Parwani V\textsuperscript{†}, Venkatesh AK\textsuperscript{†}, Sangal RB\textsuperscript{†}.  (2024). \textit{The American Journal of Emergency Medicine.} \href{https://pubmed.ncbi.nlm.nih.gov/38006634/}{\textcolor{linkblue}{[Link]}}
+    % \vspace{-4pt}
+    % \item Exploring the Effect of Holidays and Local Extreme Conditions in Accelerating Patient Discharge. \\Men M\textsuperscript{†}, Meng L, \textbf{Su H}, Sangal RB\textsuperscript{†}
+    \vspace{-4pt}
+    \item Fast for Real or Just a Feel? Reassessing Hallway Treatment Spaces and Their Impact on Emergency Department Operations.\\Dilip M\textsuperscript{†}, \textbf{Su H}, Meng L, Tarabar A\textsuperscript{†}, Parwani V\textsuperscript{†}, Pinker EJ, Venkatesh AK\textsuperscript{†}, Sangal RB\textsuperscript{†}. (2025). \textit{JACEP Open.} \href{https://www.sciencedirect.com/science/article/pii/S2688115225002152}{\textcolor{linkblue}{[Link]}}
+    \vspace{-4pt}
+    
+    \item When Less is More: Emergency Department Staffing in Greece.\\ Reid E\textsuperscript{†}, \textbf{Su H}, Dilip M\textsuperscript{†}, Agrogianni M\textsuperscript{†}, Babalis D\textsuperscript{†}, Karametos I\textsuperscript{†}, Plasati M\textsuperscript{†}, Patrikakou A\textsuperscript{†}, Vildiridi L\textsuperscript{†}, Ulrich A\textsuperscript{†}, and Tsiftsis D\textsuperscript{†}. (2026). \textit{JEM International.} \href{https://www.sciencedirect.com/science/article/pii/S3051322726000037}{\textcolor{linkblue}{[Link]}}
+    
+
+
+    
+
+
+
+ 
+\end{enumerate}
+
+% -------------------- EXPERIENCE --------------------
+\section{Teaching \& Mentorship}
+\subsection*{Teaching Assistant}
+\resumeSubHeadingListStart
+        \resumeProjectHeading
+        {MBA Operations Engine}{SP2022}
+        \resumeProjectHeading
+        {MBA Advanced Business Analytics}{FA2024, SP2023, FA2021}
+        \resumeProjectHeading
+        {MBA Healthcare Operations}{SP2025,SP2023}
+        \resumeProjectHeading
+        {EMBA Healthcare Operations}{FA2025, FA2024, FA2023}
+\resumeSubHeadingListEnd
+
+\subsection*{Teaching Case}
+\resumeSubHeadingListStart
+\resumeProjectHeading{{``Elm City Hospital".}
+    Adeniji A, Meng L, Sangal RB, \textbf{Su H}, Pinker EJ. (2023). \href{https://cases.som.yale.edu/elm-city-hospital/access}{\textcolor{linkblue}{[Link]}}}{}
+\resumeSubHeadingListEnd
+
+\subsection*{Mentorship}
+\resumeSubHeadingListStart
+\resumeProjectHeading{Yale Undergraduate-Graduate Mentorship Initiative}{2025}
+\resumeSubHeadingListEnd
+
+\section{Awards and Scholarships}
+\resumeSubHeadingListStart
+        \resumeProjectHeading{Winner, INFORMS Data Mining Best Applied Paper Award}{2025}
+        \resumeProjectHeading
+        {Winner, INFORMS Social Media Analytics Best Student Paper Award}{2025}
+        \resumeProjectHeading
+        {Winner, INFORMS Freestyle O.R. Supreme Expo (Case) Competition}{2023}
+        \resumeProjectHeading
+        {Recipient, Yale GSAS Doctoral Fellowship}{2020-Present}
+        \resumeProjectHeading
+        {Recipient, Kurt F Wendt Scholarship}{2020}
+        \resumeProjectHeading
+        {Recipient, Gilbert \& Genevieve Buske Scholarship}{2019}
+        \resumeProjectHeading
+        {Recipient, Martha Helen \& Walker George Dollmeyer Scholarship}{2018}
+
+\resumeSubHeadingListEnd
+
+\section{Professional activities}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+        {Reviewer for Behavioral OM Best Working Paper Award (2025)}{}
+          
+    \resumeSubHeadingListEnd
+
+\section{Language}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {Mandarin (Native), English (Fluent), Cantonese (Beginner)}{}
+    \resumeSubHeadingListEnd
+    
+\section{Industry Experience and Volunteering}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {Baobeihuijia $|$ \footnotesize\emph{
+Registered Volunteer}}{2021 - current}
+        \resumeItemListStart
+            \resumeItem{Compare and share user narratives across social media to facilitate families reunion}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+        {American Family Insurance $|$ \footnotesize\emph{Data Science Intern – Business Technology and Innovation Team}}{Summer 2019}
+        \resumeItemListStart
+            \resumeItem{Automated claims status report and analyzed ticket life-cycle to evaluate employee productivity}
+          \resumeItemListEnd
+        \resumeProjectHeading
+        {UW Health $|$ \footnotesize\emph{
+Project Based Internal Consultant Intern - Quality, Safety, and Improvement Team}}{2018 - 2020}
+        \resumeItemListStart
+            \resumeItem{Worked closely with providers for quality improvement projects. Delivered a staffing model with user interface}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\section{Selected Presentations}
+\begin{flushleft}
+\vspace{-5pt}
+\textit{\textsuperscript{C} Presented by coauthor}
+\end{flushleft}
+
+\subsection*{\textbf{Reuniting Forcibly Separated Families Through Shared Memories with Machine Learning.}}
+\resumeSubHeadingListStart
+        \resumeProjectHeading
+        {POMS Annual Conference, Atlanta}{May 2025}
+        \resumeProjectHeading
+        {MSOM Annual Conference, London}{Jun 2025}
+        \resumeProjectHeading
+        {HOPE Workshop, University of Notre Dame}{Sep 2025}
+        \resumeProjectHeading
+        {AI in Business Conference, Ohio State University}{Oct 2025}
+        \resumeProjectHeading
+        {INFORMS Workshop on Data Science, Atlanta}{Oct 2025}
+        \resumeProjectHeading
+        {INFORMS Workshop on Data Mining and Decision Analytics, Atlanta}{Oct 2025}
+        \resumeProjectHeading
+        {INFOMRS Annual Conference, Atlanta}{Oct 2025}
+\resumeSubHeadingListEnd
+
+\subsection*{\textbf{Crisis at the Core: Examining the Ripple Effects of Critical Incidents on Emergency Department Physician Productivity and Work Style}}
+\resumeSubHeadingListStart
+        \resumeProjectHeading
+        {INFORMS Annual Conference\textsuperscript{C}}{Oct 2025}
+        \resumeProjectHeading
+        {Wharton Empirical Workshop\textsuperscript{C}}{Sep 2025}
+        \resumeProjectHeading
+        {MSOM\textsuperscript{C}}{Jun 2025}
+        \resumeProjectHeading
+        {INFORMS Annual Conference}{Oct 2024}
+        
+\resumeSubHeadingListEnd
+
+\subsection*{\textbf{Emergency Department Boarding: Quantifying the Impact of ED Boarding on Patient Outcomes and Downstream Hospital Operations}}
+\resumeSubHeadingListStart
+        \resumeProjectHeading
+        {MSOM Annual Conference}{Jun 2023}
+        \resumeProjectHeading
+        {INFORMS Annual Conference}{Oct 2023}
+        \resumeProjectHeading
+        {INFORMS Healthcare Conference}{Jul 2023}
+        \resumeProjectHeading
+        {INFORMS Annual Conference}{Oct 2022}
+        \resumeProjectHeading
+        {POMS Annual Conference}{May 2022}
+
+\resumeSubHeadingListEnd
+
+\section{REFERENCES}
+
+\begin{minipage}[t]{0.48\textwidth}
+\textbf{Professor Lesley Meng} (PhD Co-Advisor)\\
+Assistant Professor of Operations Management \\
+Yale School of Management, Yale University \\
+New Haven, CT, USA \\
+Email: {\tt lesley.meng@yale.edu}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\textbf{Professor Edieal J. Pinker} (PhD Co-Advisor)\\
+BearingPoint Professor of Operations Management\\
+Yale School of Management, Yale University \\
+New Haven, CT, USA \\
+Email: {\tt edieal.pinker@yale.edu}
+\end{minipage}
+
+\vspace{15pt}
+
+\textbf{Professor Rohit Sangal} \\
+Assistant Professor of Emergency Medicine\\
+Yale School of Medicine, Yale University \\
+New Haven, CT, USA \\
+Email: {\tt rohit.sangal@yale.edu}
+\end{document}
