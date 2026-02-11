@@ -347,7 +347,7 @@
     {% if entry.award %}
       <!-- Award text displayed directly -->
       <div class="award-text" style="font-style: italic; margin-top: 5px; color: #666;">
-        {{ entry.award | newline_to_br }}
+        {{ entry.award | markdownify | remove: '<p>' | remove: '</p>' }}
       </div>
     {% endif %}
 
