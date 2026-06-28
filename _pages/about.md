@@ -31,4 +31,4 @@ Leveraging structured and unstructured data, my research focuses on improving an
 
 Prior to my doctoral studies, I studied Industrial & Systems Engineering and Computer Sciences at the University of Wisconsin–Madison, where my work with the [Quality & Safety Improvement Lab](https://quality-safety-innovation.wisc.edu/) and the [Analytics for Human Development Lab](https://a4hd.github.io/) sparked my research interests.
 
-I'm joining [Minnesota Carlson](https://carlsonschool.umn.edu/) as a tenure-track Assistant Professor in Supply Chain & Operations in Fall 2026 :)
+I'm joining [Minnesota Carlson](https://carlsonschool.umn.edu/) as a tenure-track Assistant Professor in Supply Chain & Operations in Fall 2026.
