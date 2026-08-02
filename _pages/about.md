@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: "Assistant Professor in Supply Chain & Operations | Carlson School of Management, University of Minnesota"
+subtitle:
 
 profile:
   align: right
@@ -25,7 +25,7 @@ latest_posts:
   limit: 3
 ---
 
-I am an Assistant Professor in the Supply Chain and Operations Department at the [Carlson School of Management](https://carlsonschool.umn.edu/), University of Minnesota.
+Hello! I am an Assistant Professor in the Supply Chain and Operations Department at the [Carlson School of Management](https://carlsonschool.umn.edu/), University of Minnesota.
 
 My research evaluates and improves the efficiency, quality, and equity of health and human services to advance societal well-being. Leveraging both structured and unstructured data, I adapt causal inference and machine learning methods to specific operational contexts to generate actionable insights.
 
