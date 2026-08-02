@@ -462,7 +462,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%68%75%69%66%65%6E%67.%73%75@%79%61%6C%65.%65%64%75", "_blank");
+          window.open("mailto:%68%75%69%66%65%6E%67@%75%6D%6E.%65%64%75", "_blank");
         },
       },{
       id: 'light-theme',

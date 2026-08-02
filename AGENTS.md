@@ -51,6 +51,22 @@ Before every commit, you **must** run these steps:
     # Check navigation, pages, images, and dark mode.
     ```
 
+## CV Publishing — Do Not Auto-Sync
+
+The LaTeX CV source and the published CV are deliberately kept separate:
+
+| File                           | Role                                              |
+| ------------------------------ | ------------------------------------------------- |
+| `file/huifeng_su_cv.tex`       | LaTeX source — edit freely                        |
+| `file/huifeng_su_cv.pdf`       | Local compile output — overwritten by every build |
+| `assets/pdf/huifeng_su_cv.pdf` | **Published** CV embedded by `_pages/cv.md`       |
+
+**Never copy `file/huifeng_su_cv.pdf` to `assets/pdf/huifeng_su_cv.pdf`** unless the
+user explicitly asks to publish or update the CV on the website. Editing or
+recompiling the tex is not such a request, and neither is a general "update the
+site" instruction. Drafts live in `file/`; publishing is always a separate,
+explicit decision.
+
 ## Critical Configuration
 
 When modifying `_config.yml`, these **must be updated together**:
