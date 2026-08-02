@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: "Assistant Professor, Supply Chain & Operations, Carlson School of Management, University of Minnesota"
+subtitle: "Assistant Professor in Supply Chain & Operations | Carlson School of Management, University of Minnesota"
 
 profile:
   align: right
