@@ -189,6 +189,7 @@ exclude:
   - docker-compose.yml
   - docker-compose-slim.yml
   - FAQ.md
+  - file/
   - Gemfile
   - Gemfile.lock
   - INSTALL.md
